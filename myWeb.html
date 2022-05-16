@@ -11,22 +11,23 @@ Receipe Website CPSC455</title>
 	<h1 align="center">My Receipe Website</h1><br>
 	<!-- Source: w3schools-->
 	<form align="center">
-		<label for="recipeTitle">Recipe Title:</label>
+		<label for="recipeTitle" class="labels">Recipe Title:</label>
   		<input name="recipeTitle" type="text" class="inputFieldClass" id="recipeTitle"><br><br>
-  		<label for="ingredient">Ingredient(s):</label>
+  		<label for="ingredient" class="labels">Ingredient(s):</label>
   		<input type="text" id="ingredient" class="inputFieldClass" name="ingredient"><br><br>
-  		<label for="instruction">Instructions:</label>
+  		<label for="instruction" class="labels">Instructions:</label>
   		<input type="text" id="instruction" class="inputFieldClass" name="instruction"><br><br>
-  		<button type="button">Submit!</button>
-		<button type="button">Clear!</button>
 	</form>
+	  	<button id="submitButton" class="button" >submitButton</button>
+		<button id="clearButton" class="button" >clearButton</button>
+		<div>
+			<script type="text/javascript" src="/recipeHandler.js"></script>
+		</div>
+	<h1 align="center">All Recipes</h1>
+	<div id = "recipeBody">
+		<script type="text/javascript" src="/recipeHandler.js"></script>
+	</div>
 </body>
 	
-<body >
-	<h1 align="center">All Recipes</h1>
-	<ul>
-  		<li>Example</li>
-	</ul>
-</body>
 	
 </html>
