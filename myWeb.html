@@ -8,25 +8,24 @@ Receipe Website CPSC455</title>
 </head>
 
 <body class="bodyClass">
-	<h1 align="center">My Receipe Website</h1><br>
+	<h1 align="center">My Recipe Website</h1><br>
 	<!-- Source: w3schools-->
-	<form align="center">
+	<form align="center" onsubmit="return false">
 		<label for="recipeTitle" class="labels">Recipe Title:</label>
   		<input name="recipeTitle" type="text" class="inputFieldClass" id="recipeTitle"><br><br>
   		<label for="ingredient" class="labels">Ingredient(s):</label>
   		<input type="text" id="ingredient" class="inputFieldClass" name="ingredient"><br><br>
   		<label for="instruction" class="labels">Instructions:</label>
   		<input type="text" id="instruction" class="inputFieldClass" name="instruction"><br><br>
-	</form>
-	  	<button id="submitButton" class="button" >submitButton</button>
+		<input id="submitButton" type="submit" value="Submit">
 		<button id="clearButton" class="button" >clearButton</button>
-		<div>
-			<script type="text/javascript" src="/recipeHandler.js"></script>
-		</div>
+	</form>
+	<!-- <button id="submitButton" class="button" value="Submit"> Submit </button> -->
 	<h1 align="center">All Recipes</h1>
 	<div id = "recipeBody">
-		<script type="text/javascript" src="/recipeHandler.js"></script>
+		
 	</div>
+	<script type="text/javascript" src="/recipeHandler.js" defer></script>
 </body>
 	
 	
