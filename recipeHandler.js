@@ -1,12 +1,12 @@
 document.getElementById("submitButton").addEventListener("click", handleSubmit);
 // initialize the webpage
-var allRecipes = [];
 var initialReceipe = {
     title: "Apple Pie",
     ingredients: ["apple", "sugar", "flour"],
     instructions: ["mix", "bake", "eat"],
 }
 var initialString = JSON.stringify(initialReceipe);
+console.log(initialString);
 let startingRecipe = JSON.parse(initialString);
 handleAllRecipes(startingRecipe);
 
