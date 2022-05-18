@@ -24,7 +24,24 @@
     font-size: 25px;
 }
 
+/* from CPSC310 project CSS */
+.button {
+    border-radius: 10px;
+	background-color: #ebb595;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
 
+/* https://codepen.io/ash_s_west/pen/GRZbvym */
+.button:hover {
+    transition-duration: 0.1s;
+    background-color: #817a7a;
+  }
 
 /* source: w3schools css navbar */
 #navbar {
