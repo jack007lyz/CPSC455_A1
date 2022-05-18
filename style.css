@@ -1,6 +1,6 @@
 @charset "utf-8";
 .bodyClass {
-    background-color: #ABE7E7;
+    background-color: #EAE7DC;
 
 }
 .inputFieldClass {
@@ -10,4 +10,43 @@
     border-style: none;
     width: 150px;
     height: 50px;
+    font-weight: normal;
+    color: #E98074;
+}
+.labels {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    color: #E98074;
+    font-style: normal;
+    font-weight: bold;
+    text-indent: 0px;
+    text-align: left;
+    padding-right: 15px;
+    font-size: 25px;
+}
+
+
+
+/* source: w3schools css navbar */
+#navbar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline;
+	overflow: hidden;
+}
+
+#navbarText a {
+  display: block;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
+#navbarText {
+	float: left;
+}
+
+h1{
+    color: #E85A4F;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: 50px;
 }

@@ -8,24 +8,31 @@ Receipe Website CPSC455</title>
 </head>
 
 <body class="bodyClass">
+	<!-- https://www.w3schools.com/css/css_navbar.asp -->
+	<ul id="navbar">
+	  	<li id = "navbarText"><a href="myWeb.html">Home Page</a></li>
+		<li id = "navbarText"><a href="aboutPage.html">About</a></li>
+	</ul>
+	<br><br>
 	<h1 align="center">My Recipe Website</h1><br>
 	<!-- Source: w3schools-->
 	<form align="center" onsubmit="return false">
 		<label for="recipeTitle" class="labels">Recipe Title:</label>
   		<input name="recipeTitle" type="text" class="inputFieldClass" id="recipeTitle"><br><br>
-  		<label for="ingredient" class="labels">Ingredient(s):</label>
+  		<label for="ingredient" class="labels">Ingredient:&nbsp; &nbsp;</label>
   		<input type="text" id="ingredient" class="inputFieldClass" name="ingredient"><br><br>
-  		<label for="instruction" class="labels">Instructions:</label>
+  		<label for="instruction" class="labels">Instruction:</label>
   		<input type="text" id="instruction" class="inputFieldClass" name="instruction"><br><br>
 		<input id="submitButton" type="submit" value="Submit" class="button">
 		<input type="reset" value="Clear">
-		<!-- <button id="clearButton" class="button" >Clear</button> -->
 	</form>
-	<!-- <button id="submitButton" class="button" value="Submit"> Submit </button> -->
 	<h1 align="center">All Recipes</h1>
 	<div id = "recipeBody">
 		
 	</div>
+	<form class="container" align="center">
+			<button type="button" id="clearRecipe" align="center">Clear Recipes</button>
+	</form>
 	<script type="text/javascript" src="/recipeHandler.js" defer></script>
 </body>
 	
