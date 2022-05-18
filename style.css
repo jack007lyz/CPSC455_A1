@@ -67,3 +67,15 @@ h1{
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
     font-size: 50px;
 }
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#recipeBody .recipeList{
+    animation: fadeIn ease 1.5s;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #ebb595;
+}

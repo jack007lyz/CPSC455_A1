@@ -32,6 +32,7 @@ function handleSubmit() {
 
 function handleAllRecipes(newReceipe){
         let recipeList = document.createElement("ul");
+        recipeList.classList.add("recipeList");
         let recipeTitle = document.createElement("li");
         recipeTitle.innerHTML = newReceipe.title;
         recipeList.appendChild(recipeTitle);
