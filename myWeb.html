@@ -24,6 +24,8 @@ Receipe Website CPSC455</title>
   		<input type="text" id="ingredient" class="inputFieldClass" name="ingredient"><br><br>
   		<label for="instruction" class="labels">Instruction:&nbsp;&nbsp;</label>
   		<input type="text" id="instruction" class="inputFieldClass" name="instruction"><br><br>
+		<label for="Time" class="labels">Cooking&nbsp; Time:&nbsp;&nbsp;</label>
+		<input type="range" min="0" max="60" value="30" class="slider" id="rangeSlider"><label for="Realtime" id="realTime">&nbsp;</label><br><br>
 		<input id="submitButton" type="submit" value="Submit" class="button">
 		<input type="reset" value="Clear" class="button">
 	</form>
@@ -36,6 +38,8 @@ Receipe Website CPSC455</title>
 	</form>
 	<script type="text/javascript" src="/recipeHandler.js" defer></script>
 	<script type="text/javascript" src="/handleClear.js" defer></script>
+	<script type="text/javascript" src="/timeHandler.js" defer></script>
+	<script type="text/javascript" src="/searchRecipe.js" defer></script>
 </body>
 	
 	

@@ -1,6 +1,6 @@
 @charset "utf-8";
 .bodyClass {
-    background-color: #EAE7DC;
+    background-color: #f4f2ec;
 
 }
 .inputFieldClass {
@@ -21,6 +21,16 @@
     text-indent: 0px;
     text-align: left;
     padding-right: 15px;
+    font-size: 25px;
+}
+
+#realTime {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    color: #E98074;
+    font-style: normal;
+    text-indent: 0px;
+    text-align: left;
+    padding-left: 5px;
     font-size: 25px;
 }
 
@@ -48,14 +58,18 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: inline;
 	overflow: hidden;
+    background-color: #EAE7DC;
 }
 
 #navbarText a {
-  display: block;
-  padding: 8px;
-  background-color: #ffffff;
+    display: block;
+    color: rgb(165, 65, 65);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Monospace;
+    font-size: 15px;
 }
 
 #navbarText {
@@ -78,4 +92,19 @@ h1{
     border-style: solid;
     border-radius: 10px;
     border-color: #ebb595;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    color: #E98074;
+    font-style: normal;
+    font-weight: bold;
+    text-indent: 0px;
+    text-align: left;
+    padding-right: 15px;
+    font-size: 15px;
+}
+
+.slider{
+    background: #d3d3d3;
+    outline: none;
+    fill: #006EE3;
+    stroke: none;
 }

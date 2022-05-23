@@ -4,6 +4,7 @@ var initialReceipe = {
     title: "Apple Pie",
     ingredients: ["apple", "sugar", "flour"],
     instructions: ["mix", "bake", "eat"],
+    time: 30
 }
 var initialString = JSON.stringify(initialReceipe);
 console.log(initialString);
@@ -16,7 +17,7 @@ function handleSubmit() {
     let recipeTitle = document.getElementById("recipeTitle").value;
     let recipeIngredients = document.getElementById("ingredient").value;
     let recipeInstructions = document.getElementById("instruction").value;
-
+    let currentTime = document.getElementById("rangeSlider");
     // split the ingredients and instructions into an array by comma
     let ingredientsArray = recipeIngredients.split(",");
     let instructionsArray = recipeInstructions.split(",");
@@ -26,6 +27,7 @@ function handleSubmit() {
         title: recipeTitle,
         ingredients: ingredientsArray,
         instructions: instructionsArray,
+        time: currentTime.value
     }
     handleAllRecipes(newReceipe);
 }
@@ -35,6 +37,7 @@ function handleAllRecipes(newReceipe){
         recipeList.classList.add("recipeList");
         let recipeTitle = document.createElement("li");
         recipeTitle.innerHTML = newReceipe.title;
+        recipeTitle.setAttribute("id", "listTitle");
         recipeList.appendChild(recipeTitle);
         
         let ingredients = document.createElement("ul");
@@ -52,6 +55,10 @@ function handleAllRecipes(newReceipe){
             instructions.appendChild(instruction);
         }
         recipeTitle.appendChild(instructions);
+
+        let cookingTime = document.createElement("li");
+        cookingTime.innerHTML = "Cooking Time: " + String(newReceipe.time) + " minutes";
+        instructions.appendChild(cookingTime);
     
         let recipeBody = document.getElementById("recipeBody");
         recipeBody.appendChild(recipeList);
