@@ -30,10 +30,13 @@ Receipe Website CPSC455</title>
 		<input type="reset" value="Clear" class="button">
 	</form>
 	<h1 align="center">All Recipes</h1>
+	<form align="center" onsubmit="return false">
+		<input type="text" id="searchTitle" class="inputFieldClass" name="searchTitle">
+		<button type="button" id="searchRecipe" align="center" class="button">Search Recipes</button>
+	</form>
 	<div id = "recipeBody">
-		
 	</div>
-	<form class="container" align="center">
+	<form class="container" align="center" onsubmit="return false">
 			<button type="button" id="clearRecipe" align="center" class="button">Clear Recipes</button>
 	</form>
 	<script type="text/javascript" src="/recipeHandler.js" defer></script>
