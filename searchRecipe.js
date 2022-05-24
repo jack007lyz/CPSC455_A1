@@ -9,8 +9,8 @@ function searchAndClear(){
         let bodyTitle = bodyArray[i].querySelector("#listTitle").innerHTML;
         if (bodyTitle.includes(title) && title){
             searchingBody.removeChild(bodyArray[i]);
+            break;
         }
-        break;
     }
 }
 

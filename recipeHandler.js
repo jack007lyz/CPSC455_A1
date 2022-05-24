@@ -11,6 +11,20 @@ console.log(initialString);
 let startingRecipe = JSON.parse(initialString);
 handleAllRecipes(startingRecipe);
 
+function checkArrayEmptyOrNull(array){
+    for(let i = 0; i < array.length; i++){
+        if(array[i] === null || array[i].trim() === ""){
+            return true;
+        }
+    }
+    return false;
+    // if (array.length === 0 || array === null || !array){
+    //     return false;
+    // }
+    // else{
+    //     return true;
+    // }
+}
 
 function handleSubmit() {
     // Get the input from the user
@@ -21,15 +35,17 @@ function handleSubmit() {
     // split the ingredients and instructions into an array by comma
     let ingredientsArray = recipeIngredients.split(",");
     let instructionsArray = recipeInstructions.split(",");
-
-    // set a newReceipe
-    let newReceipe = {
-        title: recipeTitle,
-        ingredients: ingredientsArray,
-        instructions: instructionsArray,
-        time: currentTime.value
+    if(checkArrayEmptyOrNull(ingredientsArray)||checkArrayEmptyOrNull(instructionsArray) || recipeTitle.trim() === "" || !recipeTitle){
+        alert("There cannot be empty/blank fields/item (the last item should not contain comma");
+    } else {
+        let newReceipe = {
+            title: recipeTitle,
+            ingredients: ingredientsArray,
+            instructions: instructionsArray,
+            time: currentTime.value
+        }
+        handleAllRecipes(newReceipe);
     }
-    handleAllRecipes(newReceipe);
 }
 
 function handleAllRecipes(newReceipe){
