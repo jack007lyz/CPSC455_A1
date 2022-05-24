@@ -1,4 +1,7 @@
 # CPSC455_A1
 
-## most resources from W3School
-## CPSC310 CSS
+## Citations
+
+1. W3Schools
+2. https://codepen.io/ash_s_west/pen/GRZbvym
+3. CPSC310 Project
